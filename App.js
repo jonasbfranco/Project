@@ -23,8 +23,8 @@ export default function App() {
         />
         <Stack.Screen
           name="Login"
-          options={{ headerShown: false }}
           component={Login}
+          options={{ headerShown: false }}
         />
         <Stack.Screen name="Rastreio" component={Rastreio} />
         {/* <Stack.Screen name="AreaRestrita" component={AreaRestrita} /> */}

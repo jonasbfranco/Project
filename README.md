@@ -24,11 +24,13 @@ npm install @react-navigation/native
 expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context @react-native-community/masked-view
 npm install @react-navigation/stack
 
-## SEQUELIZE
+## BACKEND
 
 npm install express --save
 
 npm install cors --save
+
+## SEQUELIZE
 
 npm install --save sequelize
 
@@ -38,11 +40,14 @@ npm install --save sequelize-cli
 
 npx sequelize-cli init
 
-npm install --save-dev nodemon
-
 npx nodemon [seu arquivo]
 
+Criar tabelas
 npx sequelize-cli model:generate --name User --attributes name:string,password:string
+
+npx sequelize-cli model:generate --name Tracking --attributes code:string,local:string,userId:integer
+
+npx sequelize-cli model:generate --name Product --attributes name:string,trackingId:integer
 
 ## RUN MIGRATES
 
